@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+  --primary-color:rgb(255, 25, 0);
+  --secondary-color:rgb(244, 244, 244);
+
+  --padding-input: .6rem .8rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  position: relative;
+  width: clamp(400px, 40vw, 600px);
+  background-color: #fff;
+  color: #111;
+  border-radius: .5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-container {
+  width: 97%;
+  height: .35rem;
+  margin-top: .5rem;
+  margin-bottom: .7rem;
+  background-color: rgb(230, 230, 230);
+  border-radius: 2rem;
+}
+.progress{
+  width: 90%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+}
+
+form > h2,
+form > h5{
+  text-align: center;
+}
+
+form > h2{
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+form > h5{
+  font-size: .6rem;
+  color: #999;
+}
+
+form  p{
+  font-size: .8rem;
+}
+
+.card-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  padding: 1rem 2rem;
+  padding-top: 0;
+}
+
+.card > .form-group {
+  margin: 1rem 0;
+}
+
+.card .form-group > p {
+  font-weight: bold;
+  margin-bottom: .4rem;
+}
+
+label{
+  margin: 0;
+  margin-left: .4rem;
+  font-size: .7rem;
+  font-weight: bold;
+  color:#999;
+}
+
+input[type="text"]{
+  font-size: .7rem;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color:#111;
+  padding: .6rem .8rem;
+  border-radius: .7rem;
+  border: none;
+  outline: none;
+}
+
+input[type="text"]::placeholder{
+  color:#999
+}
+
+.card .form-group:nth-child(2){
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .form-group .radio-container{
+  width: 49%;
+  background-color: var(--secondary-color);
+  padding: var(--padding-input);
+  border-radius: .7rem;
+  display: flex;
+}
+
+.d-none{
+  display: none;
+}
